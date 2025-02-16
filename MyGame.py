@@ -61,7 +61,7 @@ def Diagonal():
         None
 
 def Tie():
-    if a and b and c and d and e and f and g and h and i != "-":
+    if a == b == c == d == e == f == g == h == i != "-":
             print("The gaem was a tie.")
             time.sleep(3)
             quit()
