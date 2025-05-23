@@ -61,7 +61,7 @@ def Diagonal():
         None
 
 def Tie():
-    if a == b == c == d == e == f == g == h == i != "-":
+    if a != "-" and b != "-" and c != "-" and d != "-" and e != "-" and f != "-" and g != "-" and h != "-" and i != "-":
             print("The gaem was a tie.")
             time.sleep(3)
             quit()
@@ -72,23 +72,23 @@ board()
 GameRunning = True
 while GameRunning:
         P1 = int(input("Pick 1-9: "))
-        if (P1 == 1) and (a != "X" and "O"):
+        if (P1 == 1) and (a != "X" and a != "O"):
             a = "X"
-        elif (P1 == 2) and (b != "X" and "O"):
+        elif (P1 == 2) and (b != "X" and b != "O"):
             b = "X"
-        elif (P1 == 3) and (c != "X" and "O"):
+        elif (P1 == 3) and (c != "X" and c != "O"):
             c = "X"
-        elif (P1 == 4) and (d != "X" and "O"):
+        elif (P1 == 4) and (d != "X" and d != "O"):
             d = "X"
-        elif (P1 == 5) and (e != "X" and "O"):
+        elif (P1 == 5) and (e != "X" and e != "O"):
             e = "X"
-        elif (P1 == 6) and (f != "X" and "O"):
+        elif (P1 == 6) and (f != "X" and f != "O"):
             f = "X"
-        elif (P1 == 7) and (g != "X" and "O"):
+        elif (P1 == 7) and (g != "X" and g != "O"):
             g = "X"
-        elif (P1 == 8) and (h != "X" and "O"):
+        elif (P1 == 8) and (h != "X" and h != "O"):
             h = "X"
-        elif (P1 == 9) and (i != "X" and "O"):
+        elif (P1 == 9) and (i != "X" and i != "O"):
             i = "X"
         else:
             print("Cant Do That")
@@ -102,23 +102,23 @@ while GameRunning:
         Tie()
         
         P2 = int(input("Pick 1-9: "))
-        if (P2 == 1) and (a != "X" and "O"):
+        if (P2 == 1) and (a != "X" and a != "O"):
             a = "O"
-        elif (P2 == 2) and (b != "X" and "O"):
+        elif (P2 == 2) and (b != "X" and b != "O"):
             b = "O"
-        elif (P2 == 3) and (c != "X" and "O"):
+        elif (P2 == 3) and (c != "X" and c != "O"):
             c = "O"
-        elif (P2 == 4) and (d != "X" and "O"):
+        elif (P2 == 4) and (d != "X" and d != "O"):
             d = "O"
-        elif (P2 == 5) and (e != "X" and "O"):
+        elif (P2 == 5) and (e != "X" and e != "O"):
             e = "O"
-        elif (P2 == 6) and (f != "X" and "O"):
+        elif (P2 == 6) and (f != "X" and f != "O"):
             f = "O"
-        elif (P2 == 7) and (g != "X" and "O"):
+        elif (P2 == 7) and (g != "X" and g != "O"):
             g = "O"
-        elif (P2 == 8) and (h != "X" and "O"):
+        elif (P2 == 8) and (h != "X" and h != "O"):
             h = "O"
-        elif (P2 == 9) and (i != "X" and "O"):
+        elif (P2 == 9) and (i != "X" and i != "O"):
             i = "O"
         else:
             print("Cant Do That")
@@ -130,6 +130,4 @@ while GameRunning:
         Vertical()
         Diagonal()
         Tie()
-        
-        
         
